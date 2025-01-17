@@ -32,25 +32,28 @@ const Header = () => {
 
   return (
     <div className="flex flex-col items-center mt-8">
-      <div className="flex">
+        <div className="w-full">
+
+      <div className="flex justify-center">
         <div className="h-10 w-10 mr-2 border border-black rounded flex justify-center items-center">
           <CiFilter size={24} strokeWidth={1} />
         </div>
 
         <div className="border border-black rounded-lg overflow-hidden">
           {tabs.map((tab) => (
-            <TabButton
+              <TabButton
               key={tab.id}
               label={tab.label}
               isActive={activeTab === tab.id}
               onClick={() => setActiveTab(tab.id)}
-            />
-          ))}
+              />
+              ))}
         </div>
       </div>
 
       {/* Content display with full width */}
       <div className="w-full mt-4">{renderContent()}</div>
+    </div>
     </div>
   );
 };
