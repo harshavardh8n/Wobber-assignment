@@ -12,16 +12,16 @@ const NotFound = ({ type, setActiveTab }) => {
         <img
           src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQj9zC2Zj7YyjDn8snHgDlilWNTowvXjEsOUooNpX3BkzpDVbcMlWyPpxCWJNDiSzfvXFI&usqp=CAU"
           alt="No campaign found"
-          className="h-60 w-60 m-auto"
+          className="lg:h-60 lg:w-60 m-auto"
         />
-        <div className="w-3/4 text-center m-auto">
+        <div className="lg:w-3/4 text-center m-auto">
           <div className="font-semibold">No campaigns Found</div>
           <div className="flex flex-col gap-2">
             <div className="text-sm text-gray-700">
               All your {type} campaigns will be found here
             </div>
             <button
-              className="text-white bg-blue-700 w-1/4 p-2 m-auto rounded text-sm"
+              className="text-white bg-blue-700 lg:w-1/4 p-2 m-auto rounded text-sm"
               onClick={handleApplyClick} 
             >
               Apply
