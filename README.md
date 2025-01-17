@@ -28,18 +28,15 @@ git clone https://github.com/harshavardh8n/Wobber-assignment.git
 
 ### 2. Install Dependencies
 Navigate into the project directory:
-```bash
 cd Wobber-assignment
 
 
 Then, install the required dependencies using npm:
-```bash
 npm install
 
 
 ### 3. Run the Application
 After the dependencies are installed, you can start the development server:
-```bash
 npm run dev
 
 
